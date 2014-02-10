@@ -1,0 +1,12 @@
+{
+  "api_key": {
+    "label": "API Key", 
+    "required": true, 
+    "help_text": "Your BombBomb.com API key. Log on to BombBomb to get it.", 
+    "default": "XXXX-XXX-XXXX-XXXX", 
+    "choices": null, 
+    "sort": null, 
+    "type": "Password", 
+    "input_format": null
+  }
+}
