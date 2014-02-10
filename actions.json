@@ -4,7 +4,7 @@
     "help_text": "Add a contact into a drip. Will create a contact if one doesn't exist.", 
     "important": true, 
     "hide": false, 
-    "resource_url": "https://dev.bombbomb.com/app/api/zapier/api.php?class=Drips&method=AddContactToDrip", 
+    "resource_url": "https://dev.app.bombbomb.com/app/api/zapier/api.php?class=Drips&method=AddContactToDrip", 
     "custom_fields_url": null, 
     "fields": {
       "drip_id": {
@@ -36,7 +36,7 @@
     "help_text": "Add a contact to BombBomb", 
     "important": true, 
     "hide": false, 
-    "resource_url": "https://dev.bombbomb.com/app/api/zapier/api.php?class=Contacts&method=AddContact", 
+    "resource_url": "https://dev.app.bombbomb.com/app/api/zapier/api.php?class=Contacts&method=AddContact", 
     "custom_fields_url": null, 
     "fields": {
       "email": {
@@ -90,7 +90,7 @@
     "help_text": "Add a contact into a list. Will create a contact if one doesn't exist.", 
     "important": true, 
     "hide": false, 
-    "resource_url": "https://dev.bombbomb.com/app/api/zapier/api.php?class=Lists&method=AddContactToList", 
+    "resource_url": "https://dev.app.bombbomb.com/app/api/zapier/api.php?class=Lists&method=AddContactToList", 
     "custom_fields_url": null, 
     "fields": {
       "list_id": {
@@ -122,7 +122,7 @@
     "help_text": "Send an email to a contact.", 
     "important": true, 
     "hide": false, 
-    "resource_url": "https://dev.bombbomb.com/app/api/zapier/api.php?class=Emails&method=Send", 
+    "resource_url": "https://dev.app.bombbomb.com/app/api/zapier/api.php?class=Emails&method=Send", 
     "custom_fields_url": null, 
     "fields": {
       "email_id": {
