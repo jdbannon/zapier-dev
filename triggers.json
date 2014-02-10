@@ -1,0 +1,430 @@
+{
+  "trigger_abuse_report": {
+    "id": 10004, 
+    "label": "New Abuse Report", 
+    "help_text": "A contact has marked your email as spam.", 
+    "important": true, 
+    "hide": false, 
+    "data_source": "REST Hooks", 
+    "resource_url": "https://app.bombbomb.com/app/api/zapier/api.php?class=Contacts&method=GetAbuseReported", 
+    "custom_fields_url": null, 
+    "hook_event": "AbuseReported", 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "email", 
+        "label": "Complaining Email Address"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact_id", 
+        "label": "Contact ID (ignore)"
+      }
+    ], 
+    "fields": {}
+  }, 
+  "trigger_contact_added": {
+    "id": 10005, 
+    "label": "New Contact Added", 
+    "help_text": "A new contact was added to your BombBomb account", 
+    "important": true, 
+    "hide": false, 
+    "data_source": "REST Hooks", 
+    "resource_url": "https://app.bombbomb.com/app/api/zapier/api.php?class=Contacts&method=GetContact", 
+    "custom_fields_url": null, 
+    "hook_event": "AddContact", 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "address_line_1", 
+        "label": "Address Line 1"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "address_line_2", 
+        "label": "Address Line 2"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "bounce_details", 
+        "label": "Last Bounce (details)"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "business_name", 
+        "label": "Company"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "city", 
+        "label": "City"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "country", 
+        "label": "Country"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "email", 
+        "label": "Email Address"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "first_name", 
+        "label": "First Name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "last_bounce_code", 
+        "label": "Last Bounce (code)"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "last_bounce_date", 
+        "label": "Last Bounce (date)"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "last_name", 
+        "label": "Last Name"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "opt_out", 
+        "label": "Opted Out"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "phone_number", 
+        "label": "Phone Number"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "position", 
+        "label": "Job Title"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "postal_code", 
+        "label": "Postal Code"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "state", 
+        "label": "State"
+      }
+    ], 
+    "fields": {}
+  }, 
+  "trigger_contact_suppressed": {
+    "id": 10006, 
+    "label": "New Contact Suppressed", 
+    "help_text": "A contact has opted out of being emailed", 
+    "important": true, 
+    "hide": false, 
+    "data_source": "REST Hooks", 
+    "resource_url": "https://app.bombbomb.com/app/api/zapier/api.php?class=Contacts&method=GetSuppressed", 
+    "custom_fields_url": null, 
+    "hook_event": "SuppressContact", 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "contact_id"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "reason", 
+        "label": "Reason for Supressing"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "email", 
+        "label": "Email Address"
+      }
+    ], 
+    "fields": {}
+  }, 
+  "trigger_contact_unsuppressed": {
+    "id": 10007, 
+    "label": "New Contact Unsuppressed", 
+    "help_text": "This contact has opted back in or been removed from a suppression list.", 
+    "important": true, 
+    "hide": false, 
+    "data_source": "REST Hooks", 
+    "resource_url": "https://app.bombbomb.com/app/api/zapier/api.php?class=Contacts&method=GetUnsuppressed", 
+    "custom_fields_url": null, 
+    "hook_event": "UnsuppressContact", 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "contact_id"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "email", 
+        "label": "Email Address"
+      }
+    ], 
+    "fields": {}
+  }, 
+  "trigger_drips": {
+    "id": 10008, 
+    "label": "New Drip List", 
+    "help_text": "Displays all the drips in your BombBomb account.", 
+    "important": false, 
+    "hide": true, 
+    "data_source": "Polling", 
+    "resource_url": "https://app.bombbomb.com/app/api/zapier/api.php?class=Drips&method=GetDrips", 
+    "custom_fields_url": null, 
+    "hook_event": null, 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [], 
+    "fields": {}
+  }, 
+  "trigger_drip_canceled": {
+    "id": 10009, 
+    "label": "New Drip Canceled Event", 
+    "help_text": "Event fired when a user is removed from a Drip.", 
+    "important": false, 
+    "hide": false, 
+    "data_source": "REST Hooks", 
+    "resource_url": "https://app.bombbomb.com/app/api/zapier/api.php?class=Drips&method=GetDripCancelled", 
+    "custom_fields_url": null, 
+    "hook_event": "DripCancelled", 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "contact_id", 
+        "label": "Contact ID (ignore)"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "drip_id", 
+        "label": "Drip ID (ignore)"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "drip_title", 
+        "label": "Name of Drip"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "email", 
+        "label": "Email Address"
+      }
+    ], 
+    "fields": {}
+  }, 
+  "trigger_drip_started": {
+    "id": 10010, 
+    "label": "New Drip Started", 
+    "help_text": "Fires when a user is added to a drip campaign", 
+    "important": false, 
+    "hide": false, 
+    "data_source": "REST Hooks", 
+    "resource_url": "https://app.bombbomb.com/app/api/zapier/api.php?class=Drips&method=GetDripStarted", 
+    "custom_fields_url": null, 
+    "hook_event": "DripStarted", 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "contact_id", 
+        "label": "Contact ID (ignore)"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "drip_id", 
+        "label": "Drip ID (ignore)"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "drip_title", 
+        "label": "Name of Drip"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "email", 
+        "label": "Email Address"
+      }
+    ], 
+    "fields": {}
+  }, 
+  "trigger_emails": {
+    "id": 10011, 
+    "label": "New Email List", 
+    "help_text": "A list of saved BombBomb Emails", 
+    "important": false, 
+    "hide": true, 
+    "data_source": "Polling", 
+    "resource_url": "https://app.bombbomb.com/app/api/zapier/api.php?class=Emails&method=GetList", 
+    "custom_fields_url": null, 
+    "hook_event": null, 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "id", 
+        "label": "Email ID"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "name", 
+        "label": "Email Name"
+      }
+    ], 
+    "fields": {}
+  }, 
+  "trigger_email_sent": {
+    "id": 10012, 
+    "label": "New Email Sent", 
+    "help_text": "Email sent to user", 
+    "important": true, 
+    "hide": false, 
+    "data_source": "REST Hooks", 
+    "resource_url": "https://app.bombbomb.com/app/api/zapier/api.php?class=Emails&method=GetEmailSent", 
+    "custom_fields_url": null, 
+    "hook_event": "EmailSent", 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "contact_id", 
+        "label": "BombBomb Contact ID (ignore this)"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "date_sent", 
+        "label": "Date Sent"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "email_id", 
+        "label": "Email ID (ignore this)"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "from_address", 
+        "label": "From Email"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "subject", 
+        "label": "Subject"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "to_address", 
+        "label": "To Email"
+      }
+    ], 
+    "fields": {}
+  }, 
+  "trigger_form_submitted": {
+    "id": 10013, 
+    "label": "New Completed Form", 
+    "help_text": "This trigger will execute when one of your BombBomb forms is filled out .", 
+    "important": true, 
+    "hide": false, 
+    "data_source": "REST Hooks", 
+    "resource_url": "https://app.bombbomb.com/app/api/zapier/api.php?class=Forms&method=GetFormCompleted", 
+    "custom_fields_url": null, 
+    "hook_event": "FormSubmitted", 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "form_data_as_html", 
+        "label": "Form Data as HTML"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "form_id", 
+        "label": "Form ID (ignore)"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "form_name", 
+        "label": "Form Name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact_id", 
+        "label": "Contact ID (ignore)"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "email", 
+        "label": "Email Address"
+      }
+    ], 
+    "fields": {}
+  }, 
+  "trigger_lists": {
+    "id": 10014, 
+    "label": "New List of Lists", 
+    "help_text": "Get a lists of the contact lists your maintaining at BombBomb.", 
+    "important": false, 
+    "hide": true, 
+    "data_source": "Polling", 
+    "resource_url": "https://app.bombbomb.com/app/api/zapier/api.php?class=Lists&method=GetListOfLists", 
+    "custom_fields_url": null, 
+    "hook_event": null, 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [], 
+    "fields": {}
+  }, 
+  "trigger_test_login": {
+    "id": 10015, 
+    "label": "New Account Setup", 
+    "help_text": "Tests that you have properly configured Zapier to talk to BombBomb", 
+    "important": false, 
+    "hide": true, 
+    "data_source": "Polling", 
+    "resource_url": "https://app.bombbomb.com/app/api/zapier/api.php?class=Test", 
+    "custom_fields_url": null, 
+    "hook_event": null, 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [], 
+    "fields": {}
+  }
+}
