@@ -1,0 +1,12 @@
+{
+  "title": "BombBomb Dev from Arhcived 2014-02-03", 
+  "description": "Integrate with the BombBomb email marketing service. Development Version", 
+  "image_url": "https://zapier.cachefly.net/storage/developer/02453b81cbb0ccd99cc6af086aef7f9c_2.png", 
+  "test_trigger_key": "trigger_test_login", 
+  "auth_type": "API Key (Query String)", 
+  "auth_mapping": {
+    "api_key": "{{api_key}}"
+  }, 
+  "subscribe_url": "https://dev.bombbomb.com/app/api/zapier/api.php?class=RestHook&method=Register", 
+  "unsubscribe_url": "https://dev.bombbomb.com/app/api/zapier/api.php?class=RestHook&method=UnRegister"
+}
